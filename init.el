@@ -6,3 +6,5 @@
 (global-set-key "\C-h" 'delete-backward-char)
 ;; 括弧を補完する
 (electric-pair-mode 1)
+;; ~からはじまるバックアップファイルを作らない
+(setq make-backup-files nil)
