@@ -8,3 +8,6 @@
 (electric-pair-mode 1)
 ;; ~からはじまるバックアップファイルを作らない
 (setq make-backup-files nil)
+;; ⌘キーをメタキーに割り当てる
+(when (eq system-type 'darwin)
+  (setq ns-command-modifier (quote meta)))
